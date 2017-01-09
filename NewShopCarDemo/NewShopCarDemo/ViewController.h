@@ -10,12 +10,6 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-- (IBAction)touchSettlementButtonEvent:(UIButton *)sender;
-- (IBAction)touchSelectButtonEvent:(UIButton *)sender;
 @end
 

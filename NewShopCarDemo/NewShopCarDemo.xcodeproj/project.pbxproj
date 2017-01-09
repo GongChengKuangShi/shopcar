@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		182647AB1E0D1DC90014F684 /* TableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182647AA1E0D1DC90014F684 /* TableHeaderView.m */; };
-		182647AD1E0D1DF10014F684 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182647AC1E0D1DF10014F684 /* TableHeaderView.xib */; };
-		182647B01E0D22D20014F684 /* ShopCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182647AF1E0D22D20014F684 /* ShopCarModel.m */; };
 		184476671E0CAFC60091CB79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184476661E0CAFC60091CB79 /* main.m */; };
 		1844766A1E0CAFC60091CB79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184476691E0CAFC60091CB79 /* AppDelegate.m */; };
 		1844766D1E0CAFC60091CB79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844766C1E0CAFC60091CB79 /* ViewController.m */; };
@@ -19,8 +16,29 @@
 		184476801E0CAFC70091CB79 /* NewShopCarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844767F1E0CAFC70091CB79 /* NewShopCarDemoTests.m */; };
 		1844768B1E0CAFC70091CB79 /* NewShopCarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844768A1E0CAFC70091CB79 /* NewShopCarDemoUITests.m */; };
 		1844769A1E0CB0F90091CB79 /* ShopCarData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184476991E0CB0F90091CB79 /* ShopCarData.plist */; };
-		184476A21E0CBB7D0091CB79 /* ShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184476A01E0CBB7D0091CB79 /* ShopTableViewCell.m */; };
-		184476A31E0CBB7D0091CB79 /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184476A11E0CBB7D0091CB79 /* ShopTableViewCell.xib */; };
+		1871BB5A1E235EAE00B25FF2 /* ShopCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB591E235EAE00B25FF2 /* ShopCarViewController.m */; };
+		1871BB5D1E23639F00B25FF2 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB5C1E23639F00B25FF2 /* BottomView.m */; };
+		1871BB641E2363DF00B25FF2 /* ShopCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB621E2363DF00B25FF2 /* ShopCarCell.m */; };
+		1871BB651E2363DF00B25FF2 /* ShopCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1871BB631E2363DF00B25FF2 /* ShopCarCell.xib */; };
+		1871BB6A1E2365FD00B25FF2 /* shopcat_no_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 1871BB661E2365FD00B25FF2 /* shopcat_no_select.png */; };
+		1871BB6B1E2365FD00B25FF2 /* shopcat_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 1871BB671E2365FD00B25FF2 /* shopcat_select.png */; };
+		1871BB6C1E2365FD00B25FF2 /* shopcat_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1871BB681E2365FD00B25FF2 /* shopcat_delete.png */; };
+		1871BB6D1E2365FD00B25FF2 /* home_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1871BB691E2365FD00B25FF2 /* home_image.png */; };
+		1871BB881E2367A100B25FF2 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB701E2367A100B25FF2 /* MASCompositeConstraint.m */; };
+		1871BB891E2367A100B25FF2 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB731E2367A100B25FF2 /* MASConstraint.m */; };
+		1871BB8A1E2367A100B25FF2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB751E2367A100B25FF2 /* MASConstraintMaker.m */; };
+		1871BB8B1E2367A100B25FF2 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB771E2367A100B25FF2 /* MASLayoutConstraint.m */; };
+		1871BB8C1E2367A100B25FF2 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB7B1E2367A100B25FF2 /* MASViewAttribute.m */; };
+		1871BB8D1E2367A100B25FF2 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB7D1E2367A100B25FF2 /* MASViewConstraint.m */; };
+		1871BB8E1E2367A100B25FF2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB7F1E2367A100B25FF2 /* NSArray+MASAdditions.m */; };
+		1871BB8F1E2367A100B25FF2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB821E2367A100B25FF2 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		1871BB901E2367A100B25FF2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB841E2367A100B25FF2 /* View+MASAdditions.m */; };
+		1871BB911E2367A100B25FF2 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB871E2367A100B25FF2 /* ViewController+MASAdditions.m */; };
+		1871BB941E2370CF00B25FF2 /* TableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871BB931E2370CF00B25FF2 /* TableViewHeaderView.m */; };
+		18EE58E41E2380FE0087249E /* mer_x_shop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EE58E31E2380FE0087249E /* mer_x_shop@2x.png */; };
+		18EE58E71E2386F90087249E /* ShopcarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE58E61E2386F90087249E /* ShopcarModel.m */; };
+		18EE58ED1E238F690087249E /* NSMutableAttributedString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE58EC1E238F690087249E /* NSMutableAttributedString+Tools.m */; };
+		18EE58F01E23A1A20087249E /* ShopCatProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE58EF1E23A1A20087249E /* ShopCatProductModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +59,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		182647A91E0D1DC90014F684 /* TableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeaderView.h; sourceTree = "<group>"; };
-		182647AA1E0D1DC90014F684 /* TableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeaderView.m; sourceTree = "<group>"; };
-		182647AC1E0D1DF10014F684 /* TableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
-		182647AE1E0D22D20014F684 /* ShopCarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarModel.h; sourceTree = "<group>"; };
-		182647AF1E0D22D20014F684 /* ShopCarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarModel.m; sourceTree = "<group>"; };
 		184476621E0CAFC60091CB79 /* NewShopCarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewShopCarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184476661E0CAFC60091CB79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		184476681E0CAFC60091CB79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,9 +77,51 @@
 		1844768C1E0CAFC70091CB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184476981E0CB01F0091CB79 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		184476991E0CB0F90091CB79 /* ShopCarData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopCarData.plist; sourceTree = "<group>"; };
-		1844769F1E0CBB7D0091CB79 /* ShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTableViewCell.h; sourceTree = "<group>"; };
-		184476A01E0CBB7D0091CB79 /* ShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopTableViewCell.m; sourceTree = "<group>"; };
-		184476A11E0CBB7D0091CB79 /* ShopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
+		1871BB581E235EAE00B25FF2 /* ShopCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarViewController.h; sourceTree = "<group>"; };
+		1871BB591E235EAE00B25FF2 /* ShopCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarViewController.m; sourceTree = "<group>"; };
+		1871BB5B1E23639F00B25FF2 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
+		1871BB5C1E23639F00B25FF2 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		1871BB611E2363DF00B25FF2 /* ShopCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarCell.h; sourceTree = "<group>"; };
+		1871BB621E2363DF00B25FF2 /* ShopCarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarCell.m; sourceTree = "<group>"; };
+		1871BB631E2363DF00B25FF2 /* ShopCarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCarCell.xib; sourceTree = "<group>"; };
+		1871BB661E2365FD00B25FF2 /* shopcat_no_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopcat_no_select.png; sourceTree = "<group>"; };
+		1871BB671E2365FD00B25FF2 /* shopcat_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopcat_select.png; sourceTree = "<group>"; };
+		1871BB681E2365FD00B25FF2 /* shopcat_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopcat_delete.png; sourceTree = "<group>"; };
+		1871BB691E2365FD00B25FF2 /* home_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_image.png; sourceTree = "<group>"; };
+		1871BB6F1E2367A100B25FF2 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		1871BB701E2367A100B25FF2 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		1871BB711E2367A100B25FF2 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		1871BB721E2367A100B25FF2 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		1871BB731E2367A100B25FF2 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		1871BB741E2367A100B25FF2 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		1871BB751E2367A100B25FF2 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		1871BB761E2367A100B25FF2 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		1871BB771E2367A100B25FF2 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		1871BB781E2367A100B25FF2 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		1871BB791E2367A100B25FF2 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		1871BB7A1E2367A100B25FF2 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		1871BB7B1E2367A100B25FF2 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		1871BB7C1E2367A100B25FF2 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		1871BB7D1E2367A100B25FF2 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		1871BB7E1E2367A100B25FF2 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		1871BB7F1E2367A100B25FF2 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		1871BB801E2367A100B25FF2 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		1871BB811E2367A100B25FF2 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		1871BB821E2367A100B25FF2 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		1871BB831E2367A100B25FF2 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		1871BB841E2367A100B25FF2 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		1871BB851E2367A100B25FF2 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		1871BB861E2367A100B25FF2 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		1871BB871E2367A100B25FF2 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		1871BB921E2370CF00B25FF2 /* TableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHeaderView.h; sourceTree = "<group>"; };
+		1871BB931E2370CF00B25FF2 /* TableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHeaderView.m; sourceTree = "<group>"; };
+		18EE58E31E2380FE0087249E /* mer_x_shop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mer_x_shop@2x.png"; sourceTree = "<group>"; };
+		18EE58E51E2386F90087249E /* ShopcarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopcarModel.h; sourceTree = "<group>"; };
+		18EE58E61E2386F90087249E /* ShopcarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopcarModel.m; sourceTree = "<group>"; };
+		18EE58EB1E238F690087249E /* NSMutableAttributedString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Tools.h"; sourceTree = "<group>"; };
+		18EE58EC1E238F690087249E /* NSMutableAttributedString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Tools.m"; sourceTree = "<group>"; };
+		18EE58EE1E23A1A20087249E /* ShopCatProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCatProductModel.h; sourceTree = "<group>"; };
+		18EE58EF1E23A1A20087249E /* ShopCatProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCatProductModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +172,12 @@
 		184476641E0CAFC60091CB79 /* NewShopCarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18EE58E31E2380FE0087249E /* mer_x_shop@2x.png */,
+				1871BB661E2365FD00B25FF2 /* shopcat_no_select.png */,
+				1871BB671E2365FD00B25FF2 /* shopcat_select.png */,
+				1871BB681E2365FD00B25FF2 /* shopcat_delete.png */,
+				1871BB691E2365FD00B25FF2 /* home_image.png */,
+				1871BB6E1E2367A100B25FF2 /* Masonry */,
 				184476A41E0CEB030091CB79 /* Tool */,
 				1844769B1E0CBB570091CB79 /* Views */,
 				1844769C1E0CBB570091CB79 /* ViewController */,
@@ -166,12 +227,13 @@
 		1844769B1E0CBB570091CB79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1844769F1E0CBB7D0091CB79 /* ShopTableViewCell.h */,
-				184476A01E0CBB7D0091CB79 /* ShopTableViewCell.m */,
-				184476A11E0CBB7D0091CB79 /* ShopTableViewCell.xib */,
-				182647A91E0D1DC90014F684 /* TableHeaderView.h */,
-				182647AA1E0D1DC90014F684 /* TableHeaderView.m */,
-				182647AC1E0D1DF10014F684 /* TableHeaderView.xib */,
+				1871BB5B1E23639F00B25FF2 /* BottomView.h */,
+				1871BB5C1E23639F00B25FF2 /* BottomView.m */,
+				1871BB921E2370CF00B25FF2 /* TableViewHeaderView.h */,
+				1871BB931E2370CF00B25FF2 /* TableViewHeaderView.m */,
+				1871BB611E2363DF00B25FF2 /* ShopCarCell.h */,
+				1871BB621E2363DF00B25FF2 /* ShopCarCell.m */,
+				1871BB631E2363DF00B25FF2 /* ShopCarCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +241,8 @@
 		1844769C1E0CBB570091CB79 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1871BB581E235EAE00B25FF2 /* ShopCarViewController.h */,
+				1871BB591E235EAE00B25FF2 /* ShopCarViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -186,8 +250,10 @@
 		1844769D1E0CBB570091CB79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				182647AE1E0D22D20014F684 /* ShopCarModel.h */,
-				182647AF1E0D22D20014F684 /* ShopCarModel.m */,
+				18EE58E51E2386F90087249E /* ShopcarModel.h */,
+				18EE58E61E2386F90087249E /* ShopcarModel.m */,
+				18EE58EE1E23A1A20087249E /* ShopCatProductModel.h */,
+				18EE58EF1E23A1A20087249E /* ShopCatProductModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,8 +268,42 @@
 		184476A41E0CEB030091CB79 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				18EE58EB1E238F690087249E /* NSMutableAttributedString+Tools.h */,
+				18EE58EC1E238F690087249E /* NSMutableAttributedString+Tools.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		1871BB6E1E2367A100B25FF2 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				1871BB6F1E2367A100B25FF2 /* MASCompositeConstraint.h */,
+				1871BB701E2367A100B25FF2 /* MASCompositeConstraint.m */,
+				1871BB711E2367A100B25FF2 /* MASConstraint+Private.h */,
+				1871BB721E2367A100B25FF2 /* MASConstraint.h */,
+				1871BB731E2367A100B25FF2 /* MASConstraint.m */,
+				1871BB741E2367A100B25FF2 /* MASConstraintMaker.h */,
+				1871BB751E2367A100B25FF2 /* MASConstraintMaker.m */,
+				1871BB761E2367A100B25FF2 /* MASLayoutConstraint.h */,
+				1871BB771E2367A100B25FF2 /* MASLayoutConstraint.m */,
+				1871BB781E2367A100B25FF2 /* Masonry.h */,
+				1871BB791E2367A100B25FF2 /* MASUtilities.h */,
+				1871BB7A1E2367A100B25FF2 /* MASViewAttribute.h */,
+				1871BB7B1E2367A100B25FF2 /* MASViewAttribute.m */,
+				1871BB7C1E2367A100B25FF2 /* MASViewConstraint.h */,
+				1871BB7D1E2367A100B25FF2 /* MASViewConstraint.m */,
+				1871BB7E1E2367A100B25FF2 /* NSArray+MASAdditions.h */,
+				1871BB7F1E2367A100B25FF2 /* NSArray+MASAdditions.m */,
+				1871BB801E2367A100B25FF2 /* NSArray+MASShorthandAdditions.h */,
+				1871BB811E2367A100B25FF2 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				1871BB821E2367A100B25FF2 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				1871BB831E2367A100B25FF2 /* View+MASAdditions.h */,
+				1871BB841E2367A100B25FF2 /* View+MASAdditions.m */,
+				1871BB851E2367A100B25FF2 /* View+MASShorthandAdditions.h */,
+				1871BB861E2367A100B25FF2 /* ViewController+MASAdditions.h */,
+				1871BB871E2367A100B25FF2 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,12 +413,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182647AD1E0D1DF10014F684 /* TableHeaderView.xib in Resources */,
 				184476751E0CAFC70091CB79 /* LaunchScreen.storyboard in Resources */,
+				1871BB6C1E2365FD00B25FF2 /* shopcat_delete.png in Resources */,
+				1871BB6D1E2365FD00B25FF2 /* home_image.png in Resources */,
+				1871BB6B1E2365FD00B25FF2 /* shopcat_select.png in Resources */,
 				1844769A1E0CB0F90091CB79 /* ShopCarData.plist in Resources */,
+				1871BB651E2363DF00B25FF2 /* ShopCarCell.xib in Resources */,
+				18EE58E41E2380FE0087249E /* mer_x_shop@2x.png in Resources */,
 				184476721E0CAFC70091CB79 /* Assets.xcassets in Resources */,
-				184476A31E0CBB7D0091CB79 /* ShopTableViewCell.xib in Resources */,
 				184476701E0CAFC60091CB79 /* Main.storyboard in Resources */,
+				1871BB6A1E2365FD00B25FF2 /* shopcat_no_select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,12 +447,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE58F01E23A1A20087249E /* ShopCatProductModel.m in Sources */,
+				1871BB8E1E2367A100B25FF2 /* NSArray+MASAdditions.m in Sources */,
+				1871BB8D1E2367A100B25FF2 /* MASViewConstraint.m in Sources */,
+				1871BB8A1E2367A100B25FF2 /* MASConstraintMaker.m in Sources */,
+				1871BB901E2367A100B25FF2 /* View+MASAdditions.m in Sources */,
 				1844766D1E0CAFC60091CB79 /* ViewController.m in Sources */,
+				1871BB891E2367A100B25FF2 /* MASConstraint.m in Sources */,
+				1871BB5A1E235EAE00B25FF2 /* ShopCarViewController.m in Sources */,
+				1871BB8C1E2367A100B25FF2 /* MASViewAttribute.m in Sources */,
+				1871BB941E2370CF00B25FF2 /* TableViewHeaderView.m in Sources */,
+				1871BB8F1E2367A100B25FF2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				18EE58E71E2386F90087249E /* ShopcarModel.m in Sources */,
 				1844766A1E0CAFC60091CB79 /* AppDelegate.m in Sources */,
-				182647B01E0D22D20014F684 /* ShopCarModel.m in Sources */,
-				182647AB1E0D1DC90014F684 /* TableHeaderView.m in Sources */,
+				1871BB881E2367A100B25FF2 /* MASCompositeConstraint.m in Sources */,
+				1871BB8B1E2367A100B25FF2 /* MASLayoutConstraint.m in Sources */,
+				1871BB5D1E23639F00B25FF2 /* BottomView.m in Sources */,
+				1871BB641E2363DF00B25FF2 /* ShopCarCell.m in Sources */,
+				18EE58ED1E238F690087249E /* NSMutableAttributedString+Tools.m in Sources */,
+				1871BB911E2367A100B25FF2 /* ViewController+MASAdditions.m in Sources */,
 				184476671E0CAFC60091CB79 /* main.m in Sources */,
-				184476A21E0CBB7D0091CB79 /* ShopTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

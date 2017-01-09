@@ -7,22 +7,27 @@
 //
 
 #import "ViewController.h"
-#import "ShopTableViewCell.h"
-#import "TableHeaderView.h"
+#import "ShopCarViewController.h"
 
 #define DefaultBgColor RGBA(244, 244, 244, 1)
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-
+@interface ViewController ()
 @end
 
 @implementation ViewController
 
-static NSString *ShopTableViewCellID = @"ShopTableViewCell";
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setviewUI];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"click me " forState:0];
+    button.backgroundColor =[UIColor greenColor];
+    [self.view addSubview:button];
+    button.frame = CGRectMake(100, 100, 100, 100);
+    [button addTarget:self action:@selector(enterShopcat) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -35,71 +40,13 @@ static NSString *ShopTableViewCellID = @"ShopTableViewCell";
     
 }
 
-#pragma mark -- setViewUI
-- (void)setviewUI {
-    CGFloat space = 10;
-    CGFloat temp = 0;
-    self.tableView.contentInset = UIEdgeInsetsMake(temp, temp, temp, temp);
-    self.tableView.backgroundColor = DefaultBgColor;
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(temp, temp, MainScreen_size_width, space)];
-    footView.backgroundColor = DefaultBgColor;
-    self.tableView.tableFooterView = footView;
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"ShopTableViewCell" bundle:nil] forCellReuseIdentifier:ShopTableViewCellID];
-}
-
-#pragma mark -- 数据处理
-- (void)loadDataWithPlist {
+- (void)enterShopcat {
+    ShopCarViewController *vc = [[ShopCarViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:nil];
     
 }
 
 
-#pragma mark -- UITableViewDelegate And UITableViewDatasource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ShopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ShopTableViewCellID];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"ShopTableViewCell" owner:self options:nil] lastObject];
-    }
-    return cell;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    TableHeaderView *headerView = [TableHeaderView loadTableHeaderViewFromXib];
-    return headerView;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return  40;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
-}
-
-#pragma mark button点击事件
-- (IBAction)touchSettlementButtonEvent:(UIButton *)sender {
-    
-    
-}
-
-- (IBAction)touchSelectButtonEvent:(UIButton *)sender {
-    
-    
-    
-}
 @end

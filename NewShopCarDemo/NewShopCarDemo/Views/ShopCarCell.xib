@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShopCarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YA-Xj-Qch">
+                        <rect key="frame" x="8" y="32" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="ZT0-lL-Uhr"/>
+                            <constraint firstAttribute="height" constant="45" id="xZ5-1V-PsF"/>
+                        </constraints>
+                        <state key="normal" image="shopcat_no_select.png"/>
+                        <connections>
+                            <action selector="touchSelectButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="a4Y-nQ-GHl"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="7TS-1z-inV">
+                        <rect key="frame" x="53" y="19" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="cEg-i5-1Md"/>
+                            <constraint firstAttribute="width" constant="70" id="qIG-Aq-ezP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商店名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6R-jj-3S1">
+                        <rect key="frame" x="133" y="14" width="60" height="21"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥120.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHd-eB-mSs">
+                        <rect key="frame" x="133" y="39" width="46" height="21"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.6588235294" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="meF-R1-FsD">
+                        <rect key="frame" x="163" y="73" width="50" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="iSZ-gV-Our"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8p-gf-Bbw">
+                        <rect key="frame" x="138" y="72" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.77889384920000004" green="0.77889384920000004" blue="0.77889384920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4N9-Xk-ioc"/>
+                            <constraint firstAttribute="width" constant="30" id="FWZ-zC-Rcs"/>
+                        </constraints>
+                        <state key="normal" title="－">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="touchDeselectButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PiN-lu-uhW"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-ig-tib">
+                        <rect key="frame" x="208" y="72" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.77889384920000004" green="0.77889384920000004" blue="0.77889384920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="GsM-zY-nI2"/>
+                            <constraint firstAttribute="width" constant="30" id="seM-ow-1OH"/>
+                        </constraints>
+                        <state key="normal" title="+">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="touchAddButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xhf-to-2X8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhE-Wc-nL5">
+                        <rect key="frame" x="267" y="33" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="IEP-1K-Qrs"/>
+                            <constraint firstAttribute="width" constant="45" id="Try-ZW-fDd"/>
+                        </constraints>
+                        <state key="normal" image="mer_x_shop.png"/>
+                        <connections>
+                            <action selector="touchEliminateButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4OH-g1-S9r"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="meF-R1-FsD" firstAttribute="leading" secondItem="l8p-gf-Bbw" secondAttribute="trailing" constant="-5" id="4o3-PE-3mQ"/>
+                    <constraint firstItem="Z2r-ig-tib" firstAttribute="baseline" secondItem="meF-R1-FsD" secondAttribute="baseline" id="8pi-0l-QJI"/>
+                    <constraint firstItem="tHd-eB-mSs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.9" id="Ara-oE-wzX"/>
+                    <constraint firstItem="7TS-1z-inV" firstAttribute="leading" secondItem="9YA-Xj-Qch" secondAttribute="trailing" id="C4D-Ru-oJ3"/>
+                    <constraint firstItem="9YA-Xj-Qch" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="C67-pX-Es4"/>
+                    <constraint firstItem="9YA-Xj-Qch" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="COc-io-Twf"/>
+                    <constraint firstItem="Z2r-ig-tib" firstAttribute="leading" secondItem="meF-R1-FsD" secondAttribute="trailing" constant="-5" id="H2K-gx-vUq"/>
+                    <constraint firstItem="DhE-Wc-nL5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="T0v-TS-Zej"/>
+                    <constraint firstItem="7TS-1z-inV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bYN-aD-0Vm"/>
+                    <constraint firstItem="meF-R1-FsD" firstAttribute="baseline" secondItem="l8p-gf-Bbw" secondAttribute="baseline" id="fsR-sG-8E5"/>
+                    <constraint firstItem="F6R-jj-3S1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.45" id="hXc-dQ-o35"/>
+                    <constraint firstItem="tHd-eB-mSs" firstAttribute="leading" secondItem="7TS-1z-inV" secondAttribute="trailing" constant="10" id="hmt-ZE-ceN"/>
+                    <constraint firstItem="l8p-gf-Bbw" firstAttribute="leading" secondItem="7TS-1z-inV" secondAttribute="trailing" constant="15" id="klX-mq-bey"/>
+                    <constraint firstItem="l8p-gf-Bbw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.6" id="ltZ-eM-3er"/>
+                    <constraint firstItem="DhE-Wc-nL5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mFC-By-Tg9"/>
+                    <constraint firstItem="F6R-jj-3S1" firstAttribute="leading" secondItem="7TS-1z-inV" secondAttribute="trailing" constant="10" id="ziV-hg-ga7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButton" destination="Z2r-ig-tib" id="BuA-U7-eeP"/>
+                <outlet property="amountLabel" destination="tHd-eB-mSs" id="v7E-DK-qXp"/>
+                <outlet property="countLabel" destination="meF-R1-FsD" id="zQA-2b-77H"/>
+                <outlet property="deselectButton" destination="l8p-gf-Bbw" id="vkc-M7-8To"/>
+                <outlet property="selectButton" destination="9YA-Xj-Qch" id="sWf-iF-CFX"/>
+                <outlet property="shopName" destination="F6R-jj-3S1" id="FVu-H2-8XJ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_image.png" width="164" height="164"/>
+        <image name="mer_x_shop.png" width="19" height="18"/>
+        <image name="shopcat_no_select.png" width="64" height="64"/>
+    </resources>
+</document>

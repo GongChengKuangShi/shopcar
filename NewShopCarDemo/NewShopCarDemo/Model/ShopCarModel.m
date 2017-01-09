@@ -1,28 +1,13 @@
 //
-//  ShopCarModel.m
+//  ShopcarModel.m
 //  NewShopCarDemo
 //
-//  Created by Apple on 2016/12/23.
-//  Copyright © 2016年 mgjr. All rights reserved.
+//  Created by Apple on 2017/1/9.
+//  Copyright © 2017年 mgjr. All rights reserved.
 //
 
-#import "ShopCarModel.h"
+#import "ShopcarModel.h"
 
-
-@implementation ShopCarModel
-
-+ (instancetype)shopCarModelWith:(NSArray *)array {
-    return nil;
-}
-//
-//- (instancetype)initWithModelArray:(NSArray *)array {
-//    if (self = [super init]) {
-//        NSMutableArray *mutableArray = [[NSMutableArray alloc] init];
-//        for (NSDictionary *dictionary in mutableArray) {
-//            
-//        }
-//    }
-//}
-
+@implementation ShopcarModel
 
 @end
